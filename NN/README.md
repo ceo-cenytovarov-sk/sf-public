@@ -10,6 +10,7 @@ Trigger is updating only Country on Lead object. After task refinement it is pos
 Overall code coverage is 93%. 
 
 Metadata:
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/classes
 
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/triggers
@@ -26,11 +27,14 @@ https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/defa
 
 # 2 - Validation Rule
 Metadata:
+
 https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/default/objects/Lead/validationRules/NN_OwnerChange.validationRule-meta.xml
 
 # 3 - Flow
 Metadata:
+
 https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/default/flows/NN_LeadBeforeSaveFlow.flow-meta.xml
+
 https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/default/objects/Lead/fields/NN_OwnerSince__c.field-meta.xml
 
 # Demo Org:
