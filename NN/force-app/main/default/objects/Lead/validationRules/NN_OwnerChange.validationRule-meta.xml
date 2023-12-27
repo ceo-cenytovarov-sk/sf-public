@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NN_OwnerChange</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISCHANGED(OwnerId),
+    NOT(ISNEW()),
+    OR(
+        AND(
+			ISBLANK(Country), NOT($Profile.Name = &quot;System Administrator&quot;)
+			),
+        ISBLANK(TEXT(LeadSource)),
+        AND(
+			ISBLANK(TEXT(NumberOfEmployees)), NOT($Profile.Name = &quot;System Administrator&quot;), NOT($Profile.Name = &quot;Contract Manager&quot;)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Conditions to change owner are not met!</errorMessage>
+</ValidationRule>
