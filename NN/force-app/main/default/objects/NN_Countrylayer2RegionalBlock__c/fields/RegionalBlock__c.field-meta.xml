@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegionalBlock__c</fullName>
+    <externalId>false</externalId>
+    <label>Regional Block</label>
+    <referenceTo>NN_RegionalBlock__c</referenceTo>
+    <relationshipLabel>Countrylayers To Regional Blocks</relationshipLabel>
+    <relationshipName>Regional_Blocks_To_Countrylayers</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>
