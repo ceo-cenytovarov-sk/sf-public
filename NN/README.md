@@ -11,11 +11,17 @@ Overall code coverage is 93%.
 
 Metadata:
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/classes
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/triggers
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/remoteSiteSettings
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/objects/NN_Countrylayer2RegionalBlock__c
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/objects/NN_Countrylayer__c
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/objects/NN_RegionalBlock__c
+
 https://github.com/ceo-cenytovarov-sk/sf-public/tree/main/NN/force-app/main/default/objects/NN_Token__c
 
 # 2 - Validation Rule
