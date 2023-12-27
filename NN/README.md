@@ -1,18 +1,28 @@
-# Salesforce DX Project: Next Steps
+# 1 - Callout
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Free plan for countrylayer.com is used, hence no https possible, only http. Subsequently Custom Settings was used for storing url and token along with Remote Site Settings.
 
-## How Do You Plan to Deploy Your Changes?
+Queueable job is schedulet to run each night at 1:00. (System.schedule('NN_CountrylayerSERVSchedulableJob', '0 0 1 ? * * *', new NN_CountrylayerSERVSchedulable());)
+To execute it ad-hoc, use anonymous window and fire a code: new NN_CountrylayerSERVSchedulable().execute(null);
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Trigger is updating only Country on Lead object. After task refinement it is possible to extend the update to other fields.
 
-## Configure Your Salesforce DX Project
+Metadata:
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+# 2 - Validation Rule
+Metadata:
+https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/default/objects/Lead/validationRules/NN_OwnerChange.validationRule-meta.xml
 
-## Read All About It
+# 3 - Flow
+Metadata:
+https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/default/flows/NN_LeadBeforeSaveFlow.flow-meta.xml
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+# Demo Org:
+https://empathetic-otter-41d7tw-dev-ed.trailblaze.lightning.force.com/
+User with System Administrator profile:
+  Username: ceo@empathetic-otter-41d7tw.com
+  Pwd: nn-homework1
+User with NN - System Administrator profile (to check the validation rule):
+  Username: mwmtrust.reality@nn-homework.comn
+  Pwd: nn-homework1  
