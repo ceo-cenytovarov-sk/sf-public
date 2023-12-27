@@ -2,7 +2,7 @@
 
 Free plan for countrylayer.com is used, hence no https possible, only http. Subsequently Custom Settings was used for storing url and token along with Remote Site Settings.
 
-Queueable job is schedulet to run each night at 1:00. (System.schedule('NN_CountrylayerSERVSchedulableJob', '0 0 1 ? * * *', new NN_CountrylayerSERVSchedulable());)
+Queueable job is scheduled to run each night at 1:00. (System.schedule('NN_CountrylayerSERVSchedulableJob', '0 0 1 ? * * *', new NN_CountrylayerSERVSchedulable());)
 To execute it ad-hoc, use anonymous window and fire a code: new NN_CountrylayerSERVSchedulable().execute(null);
 
 Trigger is updating only Country on Lead object. After task refinement it is possible to extend the update to other fields.
