@@ -39,10 +39,13 @@ https://github.com/ceo-cenytovarov-sk/sf-public/blob/main/NN/force-app/main/defa
 
 # Demo Org:
 https://empathetic-otter-41d7tw-dev-ed.trailblaze.lightning.force.com/
+
 https://dasgang-dev-ed.trailblaze.my.salesforce.com
+
 User with System Administrator profile:
   Username: ceo@empathetic-otter-41d7tw.com
   Pwd: nn-homework1
+
 User with NN - System Administrator profile (to check the validation rule):
   Username: mwmtrust.reality@nn-homework.comn
   Pwd: nn-homework1  
